@@ -5,12 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SectorComponent } from './sector/sector.component';
 import { LugarComponent } from './lugar/lugar.component';
-
+import { CategoriaempleadoComponent } from './categoriaempleado/categoriaempleado.component';
 @NgModule({
   declarations: [
     AppComponent,
     SectorComponent,
-    LugarComponent
+    LugarComponent,
+    CategoriaempleadoComponent
   ],
   imports: [
     BrowserModule,
