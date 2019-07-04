@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SectorComponent } from './sector/sector.component';
+import { TurnosComponent } from './turnos/turnos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SectorComponent
+    SectorComponent,
+    TurnosComponent
   ],
   imports: [
     BrowserModule,
