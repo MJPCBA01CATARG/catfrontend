@@ -11,6 +11,8 @@ import { TurnosComponent } from './turnos/turnos.component';
 import { LugarComponent } from './lugar/lugar.component';
 import { CategoriaempleadoComponent } from './categoriaempleado/categoriaempleado.component';
 import { EmpresaComponent } from './empresa/empresa.component';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EmpresaComponent } from './empresa/empresa.component';
     TurnosComponent,
     LugarComponent,
     CategoriaempleadoComponent,
-    EmpresaComponent
+    EmpresaComponent,
+    LoginComponent
+
 
   ],
   imports: [
