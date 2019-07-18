@@ -11,6 +11,7 @@ import { TurnosComponent } from './turnos/turnos.component';
 import { LugarComponent } from './lugar/lugar.component';
 import { CategoriaempleadoComponent } from './categoriaempleado/categoriaempleado.component';
 import { LoginComponent } from './login/login.component';
+import { FuncionesComponent } from './funciones/funciones.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoginComponent } from './login/login.component';
     TurnosComponent,
     LugarComponent,
     CategoriaempleadoComponent,
-    LoginComponent
+    LoginComponent,
+    FuncionesComponent
 
   ],
   imports: [
