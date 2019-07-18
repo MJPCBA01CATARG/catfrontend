@@ -10,8 +10,10 @@ import { TurnosComponent } from './turnos/turnos.component';
 
 import { LugarComponent } from './lugar/lugar.component';
 import { CategoriaempleadoComponent } from './categoriaempleado/categoriaempleado.component';
+import { EmpresaComponent } from './empresa/empresa.component';
 import { LoginComponent } from './login/login.component';
 import { FuncionesComponent } from './funciones/funciones.component';
+
 
 @NgModule({
   declarations: [
@@ -20,8 +22,11 @@ import { FuncionesComponent } from './funciones/funciones.component';
     TurnosComponent,
     LugarComponent,
     CategoriaempleadoComponent,
+
     LoginComponent,
-    FuncionesComponent
+    FuncionesComponent,
+    EmpresaComponent
+   
 
   ],
   imports: [
