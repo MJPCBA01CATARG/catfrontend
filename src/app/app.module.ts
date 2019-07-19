@@ -13,6 +13,7 @@ import { CategoriaempleadoComponent } from './categoriaempleado/categoriaemplead
 import { EmpresaComponent } from './empresa/empresa.component';
 import { LoginComponent } from './login/login.component';
 import { FuncionesComponent } from './funciones/funciones.component';
+import { EmpleadosComponent } from './empleados/empleados.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FuncionesComponent } from './funciones/funciones.component';
 
     LoginComponent,
     FuncionesComponent,
-    EmpresaComponent
+    EmpresaComponent,
+    EmpleadosComponent
    
 
   ],
