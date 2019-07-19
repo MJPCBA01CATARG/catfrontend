@@ -1,30 +1,472 @@
-<p>login works!</p>
-<form>
 
-            
-    <div class="form-group col-md-5">
-      <label for="" class="col-sm-5 col-form-label">Login</label>
-      <div class="col-sm-10">
-        <input type="Login" maxlength="20" class="form-control" id="txtLogin" placeholder="">
-        
-      </div>   
-    </div>   
+<!--The content below is only a placeholder and can be replaced.-->
 
-    <div class="form-group col-md-5">
-        <label for="" class="col-sm-5 col-form-label">Password</label>
-        <div class="col-sm-10">
-          <input type="password" maxlength="20" class="form-control" id="txtPassword" placeholder="">
-          
-        </div>   
-      </div>   
+<!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul> -->
+
+
+<!-- Pegamos nuestro componente dentro de esta seccion -->
+<!-- Inicio Componente -->
+<p>ABM Empleados</p>
+
+
+    <h5>ABM EMPLEADOS <span class="badge badge-secondary"></span></h5>
 
 
     
+    <div class="form-group row">    
+    </div>
+    <div class="form-group row">
+      <label for="Ingrese el  Legajo" class="col-sm-2 col-form-label">Legajo:</label>
+      <div class="col-sm-10">
+        <input type="text" maxlength="20" class="form-control" id="txtLegajo" >
+      </div>    
 
-    <button type="button" class="btn btn-primary">REGISTRAR</button>
+         
+      
+      <label for="Ingrese el  Legajo" class="col-sm-2 col-form-label">Foto:</label>
+      <div class="col-sm-10">
 
-<button type="button" class="btn btn-success">SALIR</button>
+      <img src="https://http2.mlstatic.com/zanella-rz3-r-D_NQ_NP_768491-MLA31152812003_062019-F.webp" width = "300" height ="300">
+      
+<br/>      
 
-<a href="Cambiar Password">Cambiar Password</a>
+      </div>   
+  
+      <div class="form-group row">
+          <label for="Ingrese el nombre de la empresa" class="col-sm-2 col-form-label">Apellido y Nombre:</label>
+          <div class="col-sm-10">
+            <input type="text" maxlength="20" class="form-control" id="txtNombre" placeholder="">
+           
+          </div>             
 
-</form>
+        
+          <div class="form-group row">
+            <label for="Ingrese el nombre del centro" class="col-sm-2 col-form-label">Centro:</label>
+            <div class="col-sm-10">
+              <input type="text" maxlength="20" class="form-control" id="txtCentro" placeholder="">
+             
+            </div>      
+          </div> 
+            <div class="form-group row">
+              <label for="Ingrese el Sector" class="col-sm-2 col-form-label">Sector:</label>
+              <div class="col-sm-10">
+                <input type="text" maxlength="20" class="form-control" id="txtSector" placeholder="">
+               
+              </div>      
+            </div> 
+  
+          <div class="form-group row">
+              <label for="DNI" class="col-sm-2 col-form-label">DNI:</label>
+              <div class="col-sm-10">
+                <input type="text" maxlength="20" class="form-control" id="txtDni" placeholder="">              
+                   
+          
+      </div>     
+      </div>   
+        <div class="form-group row">
+          <label for="Empresa" class="col-sm-2 col-form-label">Empresa:</label>
+          <div class="col-sm-10">
+            <input type="text" maxlength="20" class="form-control" id="txtEmpresa" placeholder="">
+           
+          </div>               
+
+       
+              
+
+        <div class="form-group row">
+          <label for="Control" class="col-sm-2 col-form-label">Control:</label>
+          <div class="col-sm-10">
+            <input type="text" maxlength="20" class="form-control" id="txtControl" placeholder="">
+           
+          </div>      
+  
+        <div class="form-group row">    
+          </div>
+          <div class="form-group col-md-5">
+            <label for="" class="col-sm-5 col-form-label">Hora de entrada</label>
+            
+          </div> 
+              
+        
+            <div class="col-sm-10">
+              
+              <input type="text" maxlength="20" class="form-control" id="txtHoraentrada" placeholder="">
+              
+            </div> 
+
+          </div> 
+
+            <div class="form-group row">    
+            </div>
+            <div class="form-group col-md-5">
+              <label for="" class="col-sm-5 col-form-label">Turno</label>
+            </div>
+          </div>
+              <div class="col-sm-10">
+                <input type="text" maxlength="20" class="form-control" id="txtTurno" placeholder="">
+           
+
+
+                <div class="form-group row">    
+                </div>
+                <div class="form-group row">
+                  <label for="Ingrese la dirección " class="col-sm-2 col-form-label">Dirección:</label>
+                  <div class="col-sm-10">
+                    <input type="text" maxlength="20" class="form-control" id="txtDireccion" >
+                  </div>    
+
+                  <div class="form-group row">  
+                  </div>
+                  <div class="form-group row">
+                    <label for="Ingrese el teléfono " class="col-sm-2 col-form-label">Teléfono:</label>
+                    <div class="col-sm-10">
+                      <input type="text" maxlength="20" class="form-control" id="txtTelefono" >
+                    </div>    
+                  </div>
+               
+
+                  </div>
+                    <div class="form-group row">    
+                    </div>
+                    <div class="form-group row">
+                      <label for="Ingrese el celular " class="col-sm-2 col-form-label">Celular:</label>
+                      <div class="col-sm-10">
+                        <input type="text" maxlength="20" class="form-control" id="txtCelular" >
+                      </div>    
+    
+                      <div class="form-group row">    
+                        </div>
+                        <div class="form-group row">
+                          <label for="Ingrese el e-mail " class="col-sm-2 col-form-label">Email:</label>
+                          <div class="col-sm-10">
+                            <input type="text" maxlength="20" class="form-control" id="txtEmail" >
+                          </div>  
+                         
+
+                          <div class="form-group row">    
+                            </div>
+                            <div class="form-group row">
+                              <label for="Ingrese el Estado " class="col-sm-2 col-form-label">Estado:</label>
+                              <div class="col-sm-10">
+                                <input type="text" maxlength="20" class="form-control" id="txtEstado" >
+                              </div>  
+
+
+                              <div class="form-group row">    
+                                </div>
+                                <div class="form-group row">
+                                  <label for="Ingrese el Usuario " class="col-sm-2 col-form-label">Usuario:</label>
+                                  <div class="col-sm-10">
+                                    <input type="text" maxlength="20" class="form-control" id="txtUsuario" >
+                                   
+                                  </div>  
+
+                                  <div class="form-group row">    
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="Ingrese Clave " class="col-sm-2 col-form-label">Clave:</label>
+                                      <div class="col-sm-10">
+                                        <input type="text" maxlength="20" class="form-control" id="txtClave" >
+                                      </div>    
+                                      <div class="form-group row">    
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="Ingrese Bajo convenio " class="col-sm-2 col-form-label">Bajo Convenio:</label>
+                                            <div class="col-sm-10">
+                                              <input type="text" maxlength="20" class="form-control" id="txtBajoconvenio" >
+                                            </div>                                       
+     
+
+                                            <div class="form-group row">    
+                                              </div>
+                                              <div class="form-group row">
+                                                <label for="Fecha Ingreso" class="col-sm-2 col-form-label">Fecha Ingreso:</label>
+                                                <div class="col-sm-10">
+                                                  <input type="text" maxlength="20" class="form-control" id="txtFechaing" >
+                                                </div>    
+                                                    
+                                                </div>   
+                                            
+                                                <div class="form-group row">
+                                                    <label for="Fecha Baja" class="col-sm-2 col-form-label">Fecha de baja:</label>
+                                                    <div class="col-sm-10">
+                                                      <input type="text" maxlength="20" class="form-control" id="txtFechabaja" placeholder="">
+                                                     
+                                                    </div>             
+       
+
+                                                    <div class="form-group row">
+                                                        <label for="Ingrese Fecha de nacimiento " class="col-sm-2 col-form-label">Fecha Nacimiento:</label>
+                                                        <div class="col-sm-10">
+                                                          <input type="text" maxlength="20" class="form-control" id="txtFechanaci" >
+                                                        </div>                                       
+                 
+            
+                                                        <div class="form-group row">    
+                                                          </div>
+                                                          <div class="form-group row">
+                                                            <label for="Control Registro" class="col-sm-2 col-form-label">CtrlReg:</label>
+                                                            <div class="col-sm-10">
+                                                              <input type="text" maxlength="20" class="form-control" id="txtCtrlReg" >
+                                                            </div>    
+                                                                
+                                                            </div>   
+                                                        
+                                                            <div class="form-group row">
+                                                                <label for="Municipio" class="col-sm-2 col-form-label">Municipio:</label>
+                                                                <div class="col-sm-10">
+                                                                  <input type="text" maxlength="20" class="form-control" id="txtMunicipio" placeholder="">
+                                                                 
+                                                                </div>      
+                                                                
+                                                                
+     
+                                                                
+
+
+                                                                <div class="form-group row">
+                                                                    <label for="Ingrese Nro Registro " class="col-sm-2 col-form-label">Nro Registro:</label>
+                                                                    <div class="col-sm-10">
+                                                                      <input type="text" maxlength="20" class="form-control" id="txtNroReg" >
+                                                                    </div>                                       
+                             
+                        
+                                                                    <div class="form-group row">    
+                                                                      </div>
+                                                                      <div class="form-group row">
+                                                                        <label for="Fecha de emisión" class="col-sm-2 col-form-label">Fecha emisión:</label>
+                                                                        <div class="col-sm-10">
+                                                                          <input type="text" maxlength="20" class="form-control" id="txtFecemis" >
+                                                                        </div>    
+                                                                            
+                                                                        </div>   
+                                                                    
+                                                                        <div class="form-group row">
+                                                                            <label for="Fecha vencimiento" class="col-sm-2 col-form-label">Fecha de vencimiento:</label>
+                                                                            <div class="col-sm-10">
+                                                                              <input type="text" maxlength="20" class="form-control" id="txtFecvto" placeholder="">
+                                                                             
+                                                                            </div>      
+
+
+
+                                                                            <div class="form-group row">
+                                                                                <label for="Informado " class="col-sm-2 col-form-label">Informado:</label>
+                                                                                <div class="col-sm-10">
+                                                                                  <input type="text" maxlength="20" class="form-control" id="txtInformado" >
+                                                                                </div>                                       
+                                         
+                                    
+                                                                                <div class="form-group row">    
+                                                                                  </div>
+                                                                                  <div class="form-group row">
+                                                                                    <label for="Fecha de informado" class="col-sm-2 col-form-label">Fecha de informado:</label>
+                                                                                    <div class="col-sm-10">
+                                                                                      <input type="text" maxlength="20" class="form-control" id="txtFecinformado" >
+                                                                                    </div>    
+                                                                                        
+                                                                                    </div>   
+                                                                                
+                                                                                    <div class="form-group row">
+                                                                                        <label for="Funcion" class="col-sm-2 col-form-label">Función:</label>
+                                                                                        <div class="col-sm-10">
+                                                                                          <input type="text" maxlength="20" class="form-control" id="txtFuncion" placeholder="">
+                                                                                         
+                                                                                        </div>      
+
+
+                                                                                        <div class="form-group row">
+                                                                                            <label for="Lugar" class="col-sm-2 col-form-label">Lugar:</label>
+                                                                                            <div class="col-sm-10">
+                                                                                              <input type="text" maxlength="20" class="form-control" id="txtLugar" >
+                                                                                            </div>                                       
+                                                     
+                                                
+                                                                                            <div class="form-group row">    
+                                                                                              </div>
+                                                                                              <div class="form-group row">
+                                                                                                <label for="Ctarj" class="col-sm-2 col-form-label">Ctarj:</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                  <input type="text" maxlength="20" class="form-control" id="txtCtarj" >
+                                                                                                </div>    
+                                                                                                    
+                                                                                                </div>   
+                                                                                            
+                                                                                                <div class="form-group row">
+                                                                                                    <label for="Verif" class="col-sm-2 col-form-label">Verif:</label>
+                                                                                                    <div class="col-sm-10">
+                                                                                                      <input type="text" maxlength="20" class="form-control" id="txtVerif" placeholder="">
+                                                                                                     
+                                                                                                    </div>  
+
+
+
+
+                                                                                                    <div class="form-group row">
+                                                                                                        <label for="Inf Rasa" class="col-sm-2 col-form-label">Inf Rasa:</label>
+                                                                                                        <div class="col-sm-10">
+                                                                                                          <input type="text" maxlength="20" class="form-control" id="txtInfrasa" >
+                                                                                                        </div>                                       
+                                                                 
+                                                            
+                                                                                                        <div class="form-group row">    
+                                                                                                          </div>
+                                                                                                          <div class="form-group row">
+                                                                                                            <label for="jj" class="col-sm-2 col-form-label">jj:</label>
+                                                                                                            <div class="col-sm-10">
+                                                                                                              <input type="text" maxlength="20" class="form-control" id="txtJj" >
+                                                                                                            </div>    
+                                                                                                                
+                                                                                                            </div>   
+                                                                                                        
+                                                                                                            <div class="form-group row">
+                                                                                                                <label for="Emisorautoelev" class="col-sm-2 col-form-label">Emisorautoelev:</label>
+                                                                                                                <div class="col-sm-10">
+                                                                                                                  <input type="text" maxlength="20" class="form-control" id="txtEmisorautoelev" placeholder="">
+                                                                                                                 
+
+
+                                                                                                                </div>  
+                                                                                                                <div class="form-group row">    
+                                                                                                                  </div>
+                                                                                                                  <div class="form-group row">
+                                                                                                                    <label for="nroregautoelev" class="col-sm-2 col-form-label">nroregautoelev:</label>
+                                                                                                                    <div class="col-sm-10">
+                                                                                                                      <input type="text" maxlength="20" class="form-control" id="txtnroregautoelev" >
+                                                                                                                    </div>    
+                                                                                                                        
+                                                                                                                    </div>  
+                                                                                                                    
+                                                                                                                    
+                                                                                                                  </div> 
+
+
+                                                                                                                </div>  
+                                                                                                                <div class="form-group row">    
+                                                                                                                  </div>
+                                                                                                                  <div class="form-group row">
+                                                                                                                    <label for="fecemisregautoelev" class="col-sm-2 col-form-label">fecemisregautoelev:</label>
+                                                                                                                    <div class="col-sm-10">
+                                                                                                                      <input type="text" maxlength="20" class="form-control" id="txtfecemisregautoelev" >
+                                                                                                                    </div>    
+                                                                                                                        
+                                                                                                                    </div>  
+                                                                                                                    
+                                                                                                                    
+                                                                                                                  </div> 
+
+
+                                                                                                                </div>  
+                                                                                                                <div class="form-group row">    
+                                                                                                                  </div>
+                                                                                                                  <div class="form-group row">
+                                                                                                                    <label for="fecvenregautoelev" class="col-sm-2 col-form-label">fecvenregautoelev:</label>
+                                                                                                                    <div class="col-sm-10">
+                                                                                                                      <input type="text" maxlength="20" class="form-control" id="txtfecvenregautoelev" >
+                                                                                                                    </div>    
+                                                                                                                        
+                                                                                                                    </div>  
+                                                                                                                    
+                                                                                                                    
+                                                                                                                  </div> 
+
+
+                                                                                                                </div>  
+                                                                                                                <div class="form-group row">    
+                                                                                                                  </div>
+                                                                                                                  <div class="form-group row">
+                                                                                                                    <label for="ctrlregautoelev" class="col-sm-2 col-form-label">ctrlregautoelev:</label>
+                                                                                                                    <div class="col-sm-10">
+                                                                                                                      <input type="text" maxlength="20" class="form-control" id="txtctrlregautoelev" >
+                                                                                                                    </div>    
+                                                                                                                        
+                                                                                                                    </div>  
+                                                                                                                    
+                                                                                                                    
+                                                                                                                  </div> 
+
+
+</div>  
+                                                                                                                <div class="form-group row">    
+                                                                                                                  </div>
+                                                                                                                  <div class="form-group row">
+                                                                                                                    <label for="informautoelev" class="col-sm-2 col-form-label">informautoelev:</label>
+                                                                                                                    <div class="col-sm-10">
+                                                                                                                      <input type="text" maxlength="20" class="form-control" id="txtinformautoelev" >
+                                                                                                                    </div>    
+                                                                                                                        
+                                                                                                                    </div>  
+                                                                                                                    
+                                                                                                                    
+                                                                                                                  </div> 
+
+
+                                                                                                                </div>  
+                                                                                                                <div class="form-group row">    
+                                                                                                                  </div>
+                                                                                                                  <div class="form-group row">
+                                                                                                                    <label for="informaausentismo" class="col-sm-2 col-form-label">informaausentismo:</label>
+                                                                                                                    <div class="col-sm-10">
+                                                                                                                      <input type="text" maxlength="20" class="form-control" id="txtinformaausentismo" >
+                                                                                                                    </div>    
+                                                                                                                        
+                                                                                                                    </div>  
+                                                                                                                    
+                                                                                                                    
+                                                                                                                  </div> 
+
+
+                                                                                                                </div>  
+                                                                                                                <div class="form-group row">    
+                                                                                                                  </div>
+                                                                                                                  <div class="form-group row">
+                                                                                                                    <label for="categoria" class="col-sm-2 col-form-label">Categoría:</label>
+                                                                                                                    <div class="col-sm-10">
+                                                                                                                      <input type="text" maxlength="20" class="form-control" id="txtcategoria" >
+                                                                                                                    </div>    
+                                                                                                                        
+                                                                                                                    </div>  
+                                                                                                                    
+                                                                                                                    
+                                                                                                                  </div>
+
+                                                                                                                  
+
+
+  <button type="button" class="btn btn-primary">REGISTRAR</button>
+  <button type="button" class="btn btn-primary">MODIFICAR</button>
+  <button type="button" class="btn btn-secondary">CANCELAR</button>
+  <button type="button" class="btn btn-success">SALIR</button>
+  
+
+
+
+   
+
+
+  
+
+
+
+
+<!-- Fin Componente -->
+<router-outlet></router-outlet>
