@@ -1,104 +1,101 @@
 <p>turnos works!</p>
 <form>
 
-        <h5>Alta de Turnos <span class="badge badge-secondary"></span></h5>
+  <h5>Alta de Turnos <span class="badge badge-secondary"></span></h5>
+
+
+  
+<div class="form-group row">    
+</div>
+<div class="form-group row">
+  <label for="Ingrese el nombre de turno" class="col-sm-2 col-form-label">Nombre de Turno</label>
+  <div class="col-sm-10">
+    <input type="Turno" class="form-control" id="txtNombre de Turno" placeholder="Ingrese el nombre de Turno">
+   
+  </div>      
+  </div>   
+
+    <div class="form-group col-md-10">
+      <label for="Ingrese Categoría del Personal :">Categoría de Personal</label>
+      <select class="col-sm-2" id="comboCategoriadePersonal">
+          <option>Ingrese Categoría del Personal</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
     
-    
-        
-      <div class="form-group row">    
+    <div class="form-group col-md-2">
+        <label for="Tolerancia" class="col-sm-5 col-form-label">Tolerancia</label>
+        <div class="col-sd-10">
+                       
+          <input type="Turno" class="form-control" id="txtTolerancia" placeholder="">                
+                     
+        </div>                     
       </div>
-      <div class="form-group row">
-        <label for="Ingrese el nombre de turno" class="col-sm-2 col-form-label">Nombre de Turno</label>
-        <div class="col-sm-10">
-          <input type="Turno" class="form-control" id="txtNombre de Turno" placeholder="Ingrese el nombre de Turno">
-         
-        </div>      
-        </div>   
-    
-          <div class="form-group col-md-10">
-            <label for="Ingrese Categoría del Personal :">Categoría de Personal</label>
-            <select class="col-sm-2" id="comboCategoriadePersonal">
-                <option>Ingrese Categoría del Personal</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          
-          <div class="form-group col-md-2">
-              <label for="Tolerancia" class="col-sm-5 col-form-label">Tolerancia</label>
-              <div class="col-sd-10">
-                             
-                <input type="Turno" class="form-control" id="txtTolerancia" placeholder="">                
-                           
-              </div>                     
-            </div>
-    
-            <div class="form-group col-md-2">
-            <label for="Minutos" class="col-sm-5 col-form-label">Minutos</label>
-            <div class="col-sm-10">           
-                      
-                         
-            </div>           
-            
-          </div>     
-    
-              <h5>Días de Semana <span class="badge badge-secondary"></span></h5>
-    
-          <div class="form-group col-md-2">    
-            </div>
-            <div class="form-group col-md-5">
-              <label for="" class="col-sm-5 col-form-label">Hora Inicio</label>
-              <div class="col-sm-10">
-                <input type="Hora Inicio" class="form-control" id="txtHoraInicio" placeholder="">
+
+      <div class="form-group col-md-2">
+      <label for="Minutos" class="col-sm-5 col-form-label">Minutos</label>
+      <div class="col-sm-10">           
                 
-              </div>      
-              </div>
-              <div class="form-group col-md-5">    
-                </div>
-                <div class="form-group col-md-5">
-                  <label for="" class="col-sm-5 col-form-label">Hora Fín</label>
-                  <div class="col-sm-10">
-                    <input type="Hora Fin" class="form-control" id="txtHoraFin" placeholder="">
-                    
-                  </div>      
-                  </div>
-                  
-                      <h5>Fín de Semana <span class="badge badge-secondary"></span></h5>
-    
-                      
-          <div class="form-group col-md-5">    
-            </div>
-            <div class="form-group col-md-5">
-              <label for="" class="col-sm-5 col-form-label">Hora Inicio</label>
-              <div class="col-sm-10">
-                <input type="Hora Inicio" class="form-control" id="txtHoraInicio" placeholder="">
-                
-              </div>      
-              </div>
-              
-              <div class="form-group col-md-5">    
-                </div>
-    
-                
-                <div class="form-group col-md-5">
-                  <label for="" class="col-sm-5 col-form-label">Hora Fin</label>
-                  <div class="col-sm-10">
-                    <input type="Hora Fin" class="form-control" id="txtHoraFin" placeholder="">
-                    
-                  </div>   
-                </div>   
-                
-    
-                <button type="button" class="btn btn-primary">REGISTRAR</button>
-    <button type="button" class="btn btn-secondary">CANCELAR</button>
-    <button type="button" class="btn btn-success">SALIR</button>
-    
-    
+                   
+      </div>           
       
-    
-    
-    </form>
-    <router-outlet></router-outlet>
+    </div>     
+
+        <h5>Días de Semana <span class="badge badge-secondary"></span></h5>
+
+    <div class="form-group col-md-2">    
+      </div>
+      <div class="form-group col-md-5">
+        <label for="" class="col-sm-5 col-form-label">Hora Inicio</label>
+        <div class="col-sm-10">
+          <input type="Hora Inicio" class="form-control" id="txtHoraInicio" placeholder="">
+          
+        </div>      
+        </div>
+        <div class="form-group col-md-5">    
+          </div>
+          <div class="form-group col-md-5">
+            <label for="" class="col-sm-5 col-form-label">Hora Fín</label>
+            <div class="col-sm-10">
+              <input type="Hora Fin" class="form-control" id="txtHoraFin" placeholder="">
+              
+            </div>      
+            </div>
+            
+                <h5>Fín de Semana <span class="badge badge-secondary"></span></h5>
+
+                
+    <div class="form-group col-md-5">    
+      </div>
+      <div class="form-group col-md-5">
+        <label for="" class="col-sm-5 col-form-label">Hora Inicio</label>
+        <div class="col-sm-10">
+          <input type="Hora Inicio" class="form-control" id="txtHoraInicio" placeholder="">
+          
+        </div>      
+        </div>
+        
+        <div class="form-group col-md-5">    
+          </div>
+
+          
+          <div class="form-group col-md-5">
+            <label for="" class="col-sm-5 col-form-label">Hora Fín</label>
+            <div class="col-sm-10">
+              <input type="Hora Fin" class="form-control" id="txtHoraFin" placeholder="">
+              
+            </div>   
+          </div>   
+          
+
+          <button type="button" class="btn btn-primary">REGISTRAR</button>
+<button type="button" class="btn btn-secondary">CANCELAR</button>
+<button type="button" class="btn btn-success">SALIR</button>
+
+
+
+</form>
