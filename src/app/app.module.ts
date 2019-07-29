@@ -18,6 +18,10 @@ import { EmpleadosComponent } from './empleados/empleados.component';
 import { ListalugarComponent } from './listalugar/listalugar.component';
 import { ListaempresaComponent } from './listaempresa/listaempresa.component';
 import { ControldeasistenciaComponent } from './controldeasistencia/controldeasistencia.component';
+import { ListafuncionesComponent } from './listafunciones/listafunciones.component';
+import { ListasectorComponent } from './listasector/listasector.component';
+import { ListaturnosComponent } from './listaturnos/listaturnos.component';
+
 
 
 
@@ -36,7 +40,11 @@ import { ControldeasistenciaComponent } from './controldeasistencia/controldeasi
     EmpleadosComponent,
     ListalugarComponent,
     ListaempresaComponent,
-    ControldeasistenciaComponent
+    ControldeasistenciaComponent,
+    ListafuncionesComponent,
+    ListasectorComponent,
+    ListaturnosComponent
+
    
 
   ],
