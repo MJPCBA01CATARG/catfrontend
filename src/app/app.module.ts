@@ -15,6 +15,9 @@ import { LoginComponent } from './login/login.component';
 import { FuncionesComponent } from './funciones/funciones.component';
 import { ListaempleadosComponent } from './listaempleados/listaempleados.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
+import { ListafuncionesComponent } from './listafunciones/listafunciones.component';
+import { ListasectorComponent } from './listasector/listasector.component';
+import { ListaturnosComponent } from './listaturnos/listaturnos.component';
 
 
 
@@ -30,7 +33,10 @@ import { EmpleadosComponent } from './empleados/empleados.component';
     FuncionesComponent,
     EmpresaComponent,
     ListaempleadosComponent,
-    EmpleadosComponent
+    EmpleadosComponent,
+    ListafuncionesComponent,
+    ListasectorComponent,
+    ListaturnosComponent
    
 
   ],
