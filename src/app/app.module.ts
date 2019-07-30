@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {routing , appRoutingProvider} from './app-routing.module'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +26,6 @@ import { EmpleadosComponent } from './empleados/empleados.component';
     TurnosComponent,
     LugarComponent,
     CategoriaempleadoComponent,
-
     LoginComponent,
     FuncionesComponent,
     EmpresaComponent,
@@ -36,9 +36,10 @@ import { EmpleadosComponent } from './empleados/empleados.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    routing
   ],
-  providers: [],
+  providers: [appRoutingProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
