@@ -1,335 +1,493 @@
-<div class="content">
-    <div class="col-md-12">
-        <div class="card card-user">
-          <div class="card-header">
-            <h5 class="card-title">Empleados</h5>
+
+<div class="wrapper ">
+  <div class="sidebar" data-color="white" data-active-color="danger">
+    <!--
+      Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+  -->
+    <div class="logo">
+      <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+        <div class="logo-image-small">
+          <img src="../assets/img/cat-Logo.png">
+        </div>
+      </a>
+      <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        Cat Horario
+        <!-- <div class="logo-image-big">
+          <img src="../assets/img/logo-big.png">
+        </div> -->
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <ul class="nav">
+        <li>
+          <a [routerLink]= "['/empleados']" >
+            <i class="nc-icon nc-bank"></i>
+            <p>Empleados</p>
+          </a>
+        </li>
+        <li>
+          <a [routerLink]= "['/turnos']" >
+            <i class="nc-icon nc-bank"></i>
+            <p>Turnos</p>
+          </a>
+        </li>
+        <li>
+          <a href="./map.html">
+            <i class="nc-icon nc-bank"></i>
+            <p>Empresas</p>
+          </a>
+        </li>
+        <li>
+          <a href="./notifications.html">
+            <i class="nc-icon nc-bank"></i>
+            <p>Sectores</p>
+          </a>
+        </li>
+        <li>
+          <a href="./user.html">
+            <i class="nc-icon nc-bank"></i>
+            <p>User Profile</p>
+          </a>
+        </li>
+        <li class="active ">
+          <a href="./tables.html">
+            <i class="nc-icon nc-bank"></i>
+            <p>Table List</p>
+          </a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+  <div class="main-panel">
+    <!-- Inicio Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+      <div class="container-fluid">
+        <div class="navbar-wrapper">
+          <div class="navbar-toggle">
+            <button type="button" class="navbar-toggler">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </button>
           </div>
-          <div class="card-body">
-            <form>
+          <a class="navbar-brand" href="#pablo">Sistema control de Ingresos</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar navbar-kebab"></span>
+          <span class="navbar-toggler-bar navbar-kebab"></span>
+          <span class="navbar-toggler-bar navbar-kebab"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+          <form>
+            <div class="input-group no-border">
+              <input type="text" value="" class="form-control" placeholder="Search...">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="nc-icon nc-zoom-split"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link btn-magnify" href="#pablo">
+                <i class="nc-icon nc-layout-11"></i>
+                <p>
+                  <span class="d-lg-none d-md-block">Stats</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item btn-rotate dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="nc-icon nc-bell-55"></i>
+                <p>
+                  <span class="d-lg-none d-md-block">Some Actions</span>
+                </p>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-rotate" href="#pablo">
+                <i class="nc-icon nc-settings-gear-65"></i>
+                <p>
+                  <span class="d-lg-none d-md-block">Account</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- End Navbar -->
 
-
-
-                <label for="Ingrese el  Legajo" class="col-sm-2 col-form-label">Foto:</label>
-                <div class="col-sm-10">
-          
-                <img src="https://http2.mlstatic.com/zanella-rz3-r-D_NQ_NP_768491-MLA31152812003_062019-F.webp" width = "200" height ="200">
+    <!-- Inicio Componente -->
+   
+  
+    <div class="content">
+      <div class="col-md-12">
+          <div class="card card-user">
+            <div class="card-header">
+              <h5 class="card-title">Empleados</h5>
+            </div>
+            <div class="card-body">
+              <form>
+  
+  
+  
+                  <label for="Ingrese el  Legajo" class="col-sm-2 col-form-label">Foto:</label>
+                  <div class="col-sm-10">
+            
+                  <img src="https://http2.mlstatic.com/zanella-rz3-r-D_NQ_NP_768491-MLA31152812003_062019-F.webp" width = "200" height ="200">
+                  
+            <br/>      
+            
+                  </div>   
+  
+  
+  
                 
-          <br/>      
-          
-                </div>   
-
-
-
-              
-              <div class="row">
-                <div class="col-md-5 pr-1">
-                  <div class="form-group">
-                    <label>Legajo: </label>
-                    <input type="text" class="form-control" enabled="" placeholder="" value="Ingrese el Legajo">
-                  </div>
-                </div>
-                <div class="col-md-3 px-1">
-                  <div class="form-group">
-                    <label>Apellido y Nombre</label>
-                    <input type="text" class="form-control" placeholder="" value="Ingrese Apellido y Nombre">
-                  </div>
-                </div>
-                <div class="col-md-4 pl-1">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Centro:</label>
-                    <input type="email" class="form-control" placeholder="Ingrese Centro">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 pr-1">
-                  <div class="form-group">
-                    <label>Sector:</label>
-                    <input type="text" class="form-control" placeholder="DNI" value="Ingrese Sector">
-                  </div>
-                </div>
-                <div class="col-md-6 pl-1">
-                  <div class="form-group">
-                    <label>DNI:</label>
-                    <input type="text" class="form-control" placeholder="DNI" value="Ingrese DNI">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label>Empresa:</label>
-                    <input type="text" class="form-control" placeholder="Empresa" value="Ingrese Empresa">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 pr-1">
-                  <div class="form-group">
-                    <label>Control:</label>
-                    <input type="text" class="form-control" placeholder="Control" value="">
-                  </div>
-                </div>
-                <div class="col-md-4 px-1">
-                  <div class="form-group">
-                    <label>Hora de Entrada:</label>
-                    <input type="text" class="form-control" placeholder="Hora de Entrada" value="">
-                  </div>
-                </div>
-                <div class="col-md-4 pl-1">
-                  <div class="form-group">
-                    <label>Turno:</label>
-                    <input type="number" class="form-control" placeholder="Ingrese turno">
-                  </div>
-                </div>
-              </div>
-              
-               
-              
-
-              <div class="row">
+                <div class="row">
                   <div class="col-md-5 pr-1">
                     <div class="form-group">
-                      <label>Dirección: </label>
-                      <input type="text" class="form-control" enabled="" placeholder="Dirección" value="Ingrese Dirección">
+                      <label>Legajo: </label>
+                      <input type="text" class="form-control" enabled="" placeholder="" value="Ingrese el Legajo">
                     </div>
                   </div>
                   <div class="col-md-3 px-1">
                     <div class="form-group">
-                      <label>Teléfono:</label>
-                      <input type="text" class="form-control" placeholder="Username" value="Ingrese Teléfono">
+                      <label>Apellido y Nombre</label>
+                      <input type="text" class="form-control" placeholder="" value="Ingrese Apellido y Nombre">
                     </div>
                   </div>
                   <div class="col-md-4 pl-1">
                     <div class="form-group">
-                      <label for="Ingrese Celular">Celular:</label>
-                      <input type="Celular" class="form-control" placeholder="Ingrese el Celular">
+                      <label for="exampleInputEmail1">Centro:</label>
+                      <input type="email" class="form-control" placeholder="Ingrese Centro">
                     </div>
                   </div>
                 </div>
-
+                <div class="row">
+                  <div class="col-md-6 pr-1">
+                    <div class="form-group">
+                      <label>Sector:</label>
+                      <input type="text" class="form-control" placeholder="DNI" value="Ingrese Sector">
+                    </div>
+                  </div>
+                  <div class="col-md-6 pl-1">
+                    <div class="form-group">
+                      <label>DNI:</label>
+                      <input type="text" class="form-control" placeholder="DNI" value="Ingrese DNI">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label>Empresa:</label>
+                      <input type="text" class="form-control" placeholder="Empresa" value="Ingrese Empresa">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 pr-1">
+                    <div class="form-group">
+                      <label>Control:</label>
+                      <input type="text" class="form-control" placeholder="Control" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 px-1">
+                    <div class="form-group">
+                      <label>Hora de Entrada:</label>
+                      <input type="text" class="form-control" placeholder="Hora de Entrada" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="form-group">
+                      <label>Turno:</label>
+                      <input type="number" class="form-control" placeholder="Ingrese turno">
+                    </div>
+                  </div>
+                </div>
+                
+                 
+                
+  
                 <div class="row">
                     <div class="col-md-5 pr-1">
                       <div class="form-group">
-                        <label>Email: </label>
-                        <input type="text" class="form-control" enaabled="" placeholder="Company" value="Ingrese Email">
+                        <label>Dirección: </label>
+                        <input type="text" class="form-control" enabled="" placeholder="Dirección" value="Ingrese Dirección">
                       </div>
                     </div>
                     <div class="col-md-3 px-1">
                       <div class="form-group">
-                        <label>Estado:</label>
-                        <input type="text" class="form-control" placeholder="Username" value="Ingrese Estado">
+                        <label>Teléfono:</label>
+                        <input type="text" class="form-control" placeholder="Username" value="Ingrese Teléfono">
                       </div>
                     </div>
                     <div class="col-md-4 pl-1">
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Usuario:</label>
-                        <input type="Estado" class="form-control" placeholder="Ingrese Usuario">
+                        <label for="Ingrese Celular">Celular:</label>
+                        <input type="Celular" class="form-control" placeholder="Ingrese el Celular">
                       </div>
                     </div>
                   </div>
-
-
-
+  
                   <div class="row">
                       <div class="col-md-5 pr-1">
                         <div class="form-group">
-                          <label>Clave: </label>
-                          <input type="text" class="form-control" enaabled="" placeholder="Clave" value="Ingrese Clave">
+                          <label>Email: </label>
+                          <input type="text" class="form-control" enaabled="" placeholder="Company" value="Ingrese Email">
                         </div>
                       </div>
                       <div class="col-md-3 px-1">
                         <div class="form-group">
-                          <label>Bajo convenio:</label>
-                          <input type="text" class="form-control" placeholder="" value="">
+                          <label>Estado:</label>
+                          <input type="text" class="form-control" placeholder="Username" value="Ingrese Estado">
                         </div>
                       </div>
                       <div class="col-md-4 pl-1">
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Fecha Ingreso:</label>
-                          <input type="Fecha Ingreso" class="form-control" placeholder="Fecha de Ingreso">
+                          <label for="exampleInputEmail1">Usuario:</label>
+                          <input type="Estado" class="form-control" placeholder="Ingrese Usuario">
                         </div>
                       </div>
-
-
-
-
-
-
-                      <div class="col-md-5 pr-1">
+                    </div>
+  
+  
+  
+                    <div class="row">
+                        <div class="col-md-5 pr-1">
                           <div class="form-group">
-                            <label>Fecha Baja: </label>
-                            <input type="text" class="form-control" enaabled="" placeholder="Fecha de Baja" value="Ingrese Fecha de Baja">
+                            <label>Clave: </label>
+                            <input type="text" class="form-control" enaabled="" placeholder="Clave" value="Ingrese Clave">
                           </div>
                         </div>
                         <div class="col-md-3 px-1">
                           <div class="form-group">
-                            <label>Fecha de Nacimiento:</label>
-                            <input type="text" class="form-control" placeholder="" value="Ingrese fecha de Nacimiento">
+                            <label>Bajo convenio:</label>
+                            <input type="text" class="form-control" placeholder="" value="">
                           </div>
                         </div>
                         <div class="col-md-4 pl-1">
                           <div class="form-group">
-                            <label for="Control Registro">Control Registro:</label>
-                            <input type="Control Registro" class="form-control" placeholder="Control Registro">
-                          </div> 
-                          
-                          
+                            <label for="exampleInputEmail1">Fecha Ingreso:</label>
+                            <input type="Fecha Ingreso" class="form-control" placeholder="Fecha de Ingreso">
+                          </div>
                         </div>
-
-
+  
+  
+  
+  
+  
+  
                         <div class="col-md-5 pr-1">
                             <div class="form-group">
-                              <label>Municipio: </label>
-                              <input type="text" class="form-control" enaabled="" placeholder="Municipio" value="Ingrese Municipio">
+                              <label>Fecha Baja: </label>
+                              <input type="text" class="form-control" enaabled="" placeholder="Fecha de Baja" value="Ingrese Fecha de Baja">
                             </div>
                           </div>
                           <div class="col-md-3 px-1">
                             <div class="form-group">
-                              <label>Número de Registro:</label>
-                              <input type="text" class="form-control" placeholder="" value="Número de Registro">
+                              <label>Fecha de Nacimiento:</label>
+                              <input type="text" class="form-control" placeholder="" value="Ingrese fecha de Nacimiento">
                             </div>
                           </div>
                           <div class="col-md-4 pl-1">
                             <div class="form-group">
-                              <label for="Control Registro">Fecha de emisión:</label>
-                              <input type="Control Registro" class="form-control" placeholder="Ingrese fecha de emisión">
-                            </div>                               
+                              <label for="Control Registro">Control Registro:</label>
+                              <input type="Control Registro" class="form-control" placeholder="Control Registro">
+                            </div> 
                             
                             
-
-
                           </div>
-
-
+  
+  
                           <div class="col-md-5 pr-1">
                               <div class="form-group">
-                                <label>Fecha de vencimiento: </label>
-                                <input type="text" class="form-control" enaabled="" placeholder="Fecha de vencimiento" value="Ingrese Fecha de vencimiento">
+                                <label>Municipio: </label>
+                                <input type="text" class="form-control" enaabled="" placeholder="Municipio" value="Ingrese Municipio">
                               </div>
                             </div>
                             <div class="col-md-3 px-1">
                               <div class="form-group">
-                                <label>Informado:</label>
-                                <input type="text" class="form-control" placeholder="" value="Informado">
+                                <label>Número de Registro:</label>
+                                <input type="text" class="form-control" placeholder="" value="Número de Registro">
                               </div>
                             </div>
                             <div class="col-md-4 pl-1">
                               <div class="form-group">
-                                <label for="Fecha de informado">Fecha de informado:</label>
-                                <input type="Fecha de informado" class="form-control" placeholder="Fecha de informado">
-                              </div>               
-                            
-                            
-                          </div>
-
-                          <div class="col-md-5 pr-1">
-                              <div class="form-group">
-                                <label>Función: </label>
-                                <input type="text" class="form-control" enaabled="" placeholder="Función" value="Ingrese Función">
-                              </div>
+                                <label for="Control Registro">Fecha de emisión:</label>
+                                <input type="Control Registro" class="form-control" placeholder="Ingrese fecha de emisión">
+                              </div>                               
+                              
+                              
+  
+  
                             </div>
-                            <div class="col-md-3 px-1">
-                              <div class="form-group">
-                                <label>Lugar:</label>
-                                <input type="text" class="form-control" placeholder="" value="Ingrese Lugar">
+  
+  
+                            <div class="col-md-5 pr-1">
+                                <div class="form-group">
+                                  <label>Fecha de vencimiento: </label>
+                                  <input type="text" class="form-control" enaabled="" placeholder="Fecha de vencimiento" value="Ingrese Fecha de vencimiento">
+                                </div>
                               </div>
+                              <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                  <label>Informado:</label>
+                                  <input type="text" class="form-control" placeholder="" value="Informado">
+                                </div>
+                              </div>
+                              <div class="col-md-4 pl-1">
+                                <div class="form-group">
+                                  <label for="Fecha de informado">Fecha de informado:</label>
+                                  <input type="Fecha de informado" class="form-control" placeholder="Fecha de informado">
+                                </div>               
+                              
+                              
                             </div>
-                            <div class="col-md-4 pl-1">
-                              <div class="form-group">
-                                <label for="Ctarj">Ctarj:</label>
-                                <input type="Control Registro" class="form-control" placeholder="Ctarj">
-                              </div>                                
-                            
-                            
-                          </div>
-
-                          <div class="col-md-5 pr-1">
-                              <div class="form-group">
-                                <label>Verif: </label>
-                                <input type="text" class="form-control" enaabled="" placeholder="Verif" value="Verif">
+  
+                            <div class="col-md-5 pr-1">
+                                <div class="form-group">
+                                  <label>Función: </label>
+                                  <input type="text" class="form-control" enaabled="" placeholder="Función" value="Ingrese Función">
+                                </div>
                               </div>
+                              <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                  <label>Lugar:</label>
+                                  <input type="text" class="form-control" placeholder="" value="Ingrese Lugar">
+                                </div>
+                              </div>
+                              <div class="col-md-4 pl-1">
+                                <div class="form-group">
+                                  <label for="Ctarj">Ctarj:</label>
+                                  <input type="Control Registro" class="form-control" placeholder="Ctarj">
+                                </div>                                
+                              
+                              
                             </div>
-                            <div class="col-md-3 px-1">
-                              <div class="form-group">
-                                <label>Inf Rasa:</label>
-                                <input type="text" class="form-control" placeholder="" value="Inf Rasa">
+  
+                            <div class="col-md-5 pr-1">
+                                <div class="form-group">
+                                  <label>Verif: </label>
+                                  <input type="text" class="form-control" enaabled="" placeholder="Verif" value="Verif">
+                                </div>
                               </div>
+                              <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                  <label>Inf Rasa:</label>
+                                  <input type="text" class="form-control" placeholder="" value="Inf Rasa">
+                                </div>
+                              </div>
+                              <div class="col-md-4 pl-1">
+                                <div class="form-group">
+                                  <label for="Control Registro">jj:</label>
+                                  <input type="Control Registro" class="form-control" placeholder="jj">
+                                </div>                                 
+                              
+                              
                             </div>
-                            <div class="col-md-4 pl-1">
-                              <div class="form-group">
-                                <label for="Control Registro">jj:</label>
-                                <input type="Control Registro" class="form-control" placeholder="jj">
-                              </div>                                 
-                            
-                            
-                          </div>
-                          <div class="col-md-5 pr-1">
-                              <div class="form-group">
-                                <label>Emisorautoelev: </label>
-                                <input type="text" class="form-control" enaabled="" placeholder="Emisorautoelev" value="Emisorautoelev">
+                            <div class="col-md-5 pr-1">
+                                <div class="form-group">
+                                  <label>Emisorautoelev: </label>
+                                  <input type="text" class="form-control" enaabled="" placeholder="Emisorautoelev" value="Emisorautoelev">
+                                </div>
                               </div>
+                              <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                  <label>nroregautoelev:</label>
+                                  <input type="text" class="form-control" placeholder="" value="nroregautoelev">
+                                </div>
+                              </div>
+                              <div class="col-md-4 pl-1">
+                                <div class="form-group">
+                                  <label for="fecemisregautoelev">fecemisregautoelev:</label>
+                                  <input type="fecemisregautoelev" class="form-control" placeholder="fecemisregautoelev">
+                                </div>                                 
+                              
+                              
                             </div>
-                            <div class="col-md-3 px-1">
-                              <div class="form-group">
-                                <label>nroregautoelev:</label>
-                                <input type="text" class="form-control" placeholder="" value="nroregautoelev">
+                            <div class="col-md-5 pr-1">
+                                <div class="form-group">
+                                  <label>fecvenregautoelev: </label>
+                                  <input type="text" class="form-control" enaabled="" placeholder="fecvenregautoelev" value="fecvenregautoelev">
+                                </div>
                               </div>
+                              <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                  <label>ctrlregautoelev:</label>
+                                  <input type="text" class="form-control" placeholder="" value="ctrlregautoelev">
+                                </div>
+                              </div>
+                              <div class="col-md-4 pl-1">
+                                <div class="form-group">
+                                  <label for="informautoelev">informautoelev:</label>
+                                  <input type="informautoelev" class="form-control" placeholder="informautoelev">
+                                </div>                                
+                              
+                              
                             </div>
-                            <div class="col-md-4 pl-1">
-                              <div class="form-group">
-                                <label for="fecemisregautoelev">fecemisregautoelev:</label>
-                                <input type="fecemisregautoelev" class="form-control" placeholder="fecemisregautoelev">
-                              </div>                                 
-                            
-                            
-                          </div>
-                          <div class="col-md-5 pr-1">
-                              <div class="form-group">
-                                <label>fecvenregautoelev: </label>
-                                <input type="text" class="form-control" enaabled="" placeholder="fecvenregautoelev" value="fecvenregautoelev">
+                            <div class="col-md-5 pr-1">
+                                <div class="form-group">
+                                  <label>informaausentismo: </label>
+                                  <input type="text" class="form-control" enaabled="" placeholder="informaausentismo" value="informaausentismo">
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-md-3 px-1">
-                              <div class="form-group">
-                                <label>ctrlregautoelev:</label>
-                                <input type="text" class="form-control" placeholder="" value="ctrlregautoelev">
-                              </div>
-                            </div>
-                            <div class="col-md-4 pl-1">
-                              <div class="form-group">
-                                <label for="informautoelev">informautoelev:</label>
-                                <input type="informautoelev" class="form-control" placeholder="informautoelev">
-                              </div>                                
-                            
-                            
-                          </div>
-                          <div class="col-md-5 pr-1">
-                              <div class="form-group">
-                                <label>informaausentismo: </label>
-                                <input type="text" class="form-control" enaabled="" placeholder="informaausentismo" value="informaausentismo">
-                              </div>
-                            </div>
-                            <div class="col-md-3 px-1">
-                              <div class="form-group">
-                                <label>Categoría:</label>
-                                <input type="text" class="form-control" placeholder="" value="Ingrese Categoría">
-                              </div>
-                            </div>    
-                    </div>                     
-
-
-
-                <div class="update ml-auto mr-auto">
-                  <button type="submit" class="btn btn-primary btn-round">REGISTRAR</button>
-                  <button type="submit" class="btn btn-primary btn-round">MODIFICAR</button>
-                  <button type="submit" class="btn btn-primary btn-round">CANCELAR</button>
-                  <button type="submit" class="btn btn-primary btn-round">SALIR</button>
-
-                </div>
-              
-            </form>
+                              <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                  <label>Categoría:</label>
+                                  <input type="text" class="form-control" placeholder="" value="Ingrese Categoría">
+                                </div>
+                              </div>    
+                      </div>                     
+  
+  
+  
+                  <div class="update ml-auto mr-auto">
+                    <button type="submit" class="btn btn-primary btn-round">REGISTRAR</button>
+                    <button type="submit" class="btn btn-primary btn-round">MODIFICAR</button>
+                    <button type="submit" class="btn btn-primary btn-round">CANCELAR</button>
+                    <button type="submit" class="btn btn-primary btn-round">SALIR</button>
+  
+                  </div>
+                
+              </form>
+            </div>
           </div>
         </div>
+  </div>
+  
+
+
+
+    
+ <!-- Fin Componente -->
+
+ <!--Footer-->  
+    <footer class="footer footer-black  footer-white ">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="https://www.creative-tim.com" target="_blank">Contacto</a>
+              </li>
+              <li>
+                <a href="http://blog.creative-tim.com/" target="_blank">Ubicación</a>
+              </li>             
+            </ul>
+          </nav>          
+        </div>
       </div>
+    </footer>
+    <!--End Footer-->
+  </div>
 </div>
+
