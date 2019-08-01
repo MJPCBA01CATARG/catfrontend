@@ -1,5 +1,5 @@
-export class view_model_turnos {
-    Nombre: string; 
+export class view_model_listaturnos {
+    Nombre: string;
     idturno: number;
     Inicio: string;
     Fin: string;
@@ -8,4 +8,5 @@ export class view_model_turnos {
     InicioF: string;
     FinF: string;
     Estado: string;
-}
+   
+ }
