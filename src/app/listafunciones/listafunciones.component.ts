@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { view_model_listafunciones } from './view_model_listafunciones';
 @Component({
   selector: 'app-listafunciones',
   templateUrl: './listafunciones.component.html',
