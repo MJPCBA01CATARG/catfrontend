@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { view_model_categoriaempleado } from './view_model_categoriaempleado';
 
 @Component({
   selector: 'app-categoriaempleado',
