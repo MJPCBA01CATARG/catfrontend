@@ -22,6 +22,7 @@ import { ControldeasistenciaComponent } from './controldeasistencia/controldeasi
 import { ListafuncionesComponent } from './listafunciones/listafunciones.component';
 import { ListasectorComponent } from './listasector/listasector.component';
 import { ListaturnosComponent } from './listaturnos/listaturnos.component';
+import { MenugeneralComponent } from './menugeneral/menugeneral.component';
 
 
 
@@ -43,7 +44,8 @@ import { ListaturnosComponent } from './listaturnos/listaturnos.component';
     ControldeasistenciaComponent,
     ListafuncionesComponent,
     ListasectorComponent,
-    ListaturnosComponent
+    ListaturnosComponent,
+    MenugeneralComponent
 
    
 

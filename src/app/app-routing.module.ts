@@ -16,6 +16,7 @@ import { ListalugarComponent } from './listalugar/listalugar.component';
 import { ListasectorComponent } from './listasector/listasector.component';
 import { ListaturnosComponent } from './listaturnos/listaturnos.component';
 import { LoginComponent } from './login/login.component';
+import { MenugeneralComponent } from './menugeneral/menugeneral.component';
 
 
 
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'listasector', component: ListasectorComponent },
   { path: 'listaturnos', component: ListaturnosComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'menugeneral', component: MenugeneralComponent },
   
 ];
 
