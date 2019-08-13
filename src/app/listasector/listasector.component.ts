@@ -19,7 +19,7 @@ export class ListasectorComponent implements OnInit {
 
   private getSectores() {
     let urlapi
-    = 'https://localhost:5001/api/sectores';
+    = 'https://localhost:44368/api/sectores';
     
     this.httpClient
       .get(urlapi)
