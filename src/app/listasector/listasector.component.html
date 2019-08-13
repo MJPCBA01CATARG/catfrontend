@@ -18,11 +18,21 @@
               <table class="table">
                 <thead class=" text-primary">
                   <th>
+                    Código
+                  </th> <th>
                     Sector
                   </th>
-                 
-                                       
+                  <th>
+                    Responsable
+                  </th>               
                 </thead>
+                <tbody>
+                  <tr *ngFor="let sector of sectores">
+                  <td>{{sector.codigo}}</td>
+                  <td>{{sector.nombre}}</td>
+                  <td>{{sector.responsable}}</td>
+                  </tr>
+                  </tbody>
                
               </table>
             </div>
