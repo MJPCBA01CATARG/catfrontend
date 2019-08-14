@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../app.data.service';
+
+
 
 @Component({
   selector: 'app-listalugar',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListalugarComponent implements OnInit {
 
-  constructor() { }
-
+  public currentEuroRates: any = null;
+  //public sectores: view_model_listasector[] = null;
+  constructor(private data: DataService) { }
+  lugares: Object;
   ngOnInit() {
+
+  
+    this.data.getLugares().subscribe(data => {
+      this.lugares = data
+      console.log(this.lugares);
+    })
+
   }
 
 }
