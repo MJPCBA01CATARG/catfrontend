@@ -16,11 +16,13 @@ export class ListasectorComponent implements OnInit {
   sectores: Object;
   ngOnInit() {
 
+
   
     this.data.getSectores().subscribe(data => {
       this.sectores = data
       console.log(this.sectores);
     })
+
 
   }
  
