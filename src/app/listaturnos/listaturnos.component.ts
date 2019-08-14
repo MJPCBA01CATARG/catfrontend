@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../app.data.service';
+
 
 @Component({
   selector: 'app-listaturnos',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaturnosComponent implements OnInit {
 
-  constructor() { }
-
+  public currentEuroRates: any = null;
+  //public sectores: view_model_listasector[] = null;
+  constructor(private data: DataService) { }
+  turnos: Object;
   ngOnInit() {
+
+
+  
+    this.data.getTurnos().subscribe(data => {
+      this.turnos = data
+      console.log(this.turnos);
+    })
+
+
   }
+
 
 }

@@ -17,4 +17,7 @@ export class DataService {
   getFunciones() {
     return this.http.get('https://localhost:44368/api/funciones')
   }
+  getTurnos() {
+    return this.http.get('https://localhost:44368/api/turnos')
+  }
 }
