@@ -22,7 +22,12 @@
                     </th>
                                          
                   </thead>
-                 
+                  <tbody>
+                    <tr *ngFor="let funcion of funciones">
+                    <td>{{funcion.codfuncion}}</td>
+                    <td>{{funcion.descripcion}}</td>
+                    </tr>
+                  </tbody>                
                 </table>
               </div>
             </div>

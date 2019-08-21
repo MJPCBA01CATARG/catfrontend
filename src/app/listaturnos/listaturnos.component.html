@@ -16,14 +16,15 @@
               <table class="table">
                 <thead class=" text-primary">
                   <th>
-                    Turno
+                    Id Turno
+                  </th>
+                  <th>
+                    Nombre
                   </th>
                   <th>
                     Categoría del Personal
                   </th>
-                  <th>
-                    Tolerancia en minutos
-                  </th>
+                
                   <th class="text-right">
                     Hora Inicio
                   </th>
@@ -33,15 +34,33 @@
                   </th>
 
                   <th>
+                      Tolerancia en minutos
+                    </th>
+                  <th>
                     Hora de Inicio (Fín de Semana)
                   </th>
 
                   <th>
                     Hora de Fín (Fín de Semana)
                   </th>
+                  <th>
+                    Estado
+                  </th>
 
                 </thead>
-               
+                <tbody>
+                  <tr *ngFor="let turno of turnos">
+                  <td>{{turno.idturno}}</td>
+                  <td>{{turno.nombre}}</td>
+                  <td>{{turno.categoria}}</td>
+                  <td>{{turno.inicio}}</td>
+                  <td>{{turno.fin}}</td>
+                  <td>{{turno.tolerancia}}</td>
+                  <td>{{turno.inicioF}}</td>
+                  <td>{{turno.finF}}</td>
+                  <td>{{turno.estado}}</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

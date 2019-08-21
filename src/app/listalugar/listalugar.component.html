@@ -18,8 +18,14 @@
                     </th>
                     <th>
                       Descripcion
-                    </th>
+                    </th> 
                   </thead>
+                  <tbody>
+                    <tr *ngFor="let lugar of lugares">
+                    <td>{{lugar.codLugar}}</td>
+                    <td>{{lugar.descripcion}}</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>

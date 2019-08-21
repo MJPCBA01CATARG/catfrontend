@@ -10,6 +10,17 @@ export class DataService {
 
   getSectores() {
     return this.http.get('https://localhost:44368/api/sectores')
+
+  }
+  getLugares() {
+    return this.http.get('https://localhost:44368/api/lugar')
+  }
+  getFunciones() {
+    return this.http.get('https://localhost:44368/api/funciones')
+  }
+  getTurnos() {
+    return this.http.get('https://localhost:44368/api/turnos')
+
   }
 
   getempresa() {
