@@ -9,6 +9,12 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getSectores() {
-    return this.http.get('https://localhost:5001/api/sectores')
+    return this.http.get('https://localhost:44368/api/sectores')
   }
+
+  getempresa() {
+    return this.http.get('https://localhost:5001/api/empresa')
+  }
+
+
 }

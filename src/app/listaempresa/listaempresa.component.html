@@ -18,8 +18,11 @@
                         Nombre
                     </th>
                     <th>
-                        Teléfono
+                        Código
                     </th>
+                    <th>
+                      Teléfono
+                  </th>
                     <th>
                         Email address
                     </th>
@@ -34,6 +37,22 @@
                     </th>
                                          
                   </thead>
+
+
+                  <tbody>
+                    <tr *ngFor="let empresa of empresas">
+                    <td>{{empresa.nombre}}</td>
+                    <td>{{empresa.codigo}}</td>
+                    <td>{{empresa.telefono}}</td>
+                    <td>{{empresa.domicilio}}</td>
+                    <td>{{empresa.email}}</td>
+                    <td>{{empresa.contacto}}</td>
+                    <td>{{empresa.provincia}}</td>
+
+                    </tr>
+                    </tbody>
+
+
                  
                 </table>
               </div>
