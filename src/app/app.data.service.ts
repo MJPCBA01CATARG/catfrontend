@@ -26,6 +26,10 @@ export class DataService {
   getempresa() {
     return this.http.get('https://localhost:5001/api/empresa')
   }
+  getempleados() {
+    return this.http.get('https://localhost:5001/api/empleados')
+  }
+
 
 
 }
