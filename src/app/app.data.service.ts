@@ -28,8 +28,12 @@ export class DataService {
   }
   getempleados() {
     return this.http.get('https://localhost:5001/api/empleados')
-  }
+
+      }
+
+      getfunciones() {
+        return this.http.get('https://localhost:5001/api/listafunciones')
 
 
-
+}
 }
