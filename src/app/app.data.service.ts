@@ -34,6 +34,13 @@ export class DataService {
       getfunciones() {
         return this.http.get('https://localhost:5001/api/listafunciones')
 
+    
+
+
+}
+getcargadianolaborables() {
+  return this.http.get('https://localhost:5001/api/cargadianolaborables')
+
 
 }
 }
