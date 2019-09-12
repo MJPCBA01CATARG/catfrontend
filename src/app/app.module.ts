@@ -25,7 +25,7 @@ import { ListasectorComponent } from './listasector/listasector.component';
 import { ListaturnosComponent } from './listaturnos/listaturnos.component';
 import { MenugeneralComponent } from './menugeneral/menugeneral.component';
 import { CargadianolaborablesComponent } from './cargadianolaborables/cargadianolaborables.component';
-import { ListaautorizaciondehorasextrasComponent } from './listaautorizaciondehorasextras/listaautorizaciondehorasextras.component';
+import { ListahorasautorizadasComponent } from './listahorasautorizadas/listahorasautorizadas.component';
 
 
 
@@ -50,7 +50,8 @@ import { ListaautorizaciondehorasextrasComponent } from './listaautorizaciondeho
     ListaturnosComponent,
     MenugeneralComponent,
     CargadianolaborablesComponent,
-    ListaautorizaciondehorasextrasComponent
+    ListahorasautorizadasComponent
+    
 
    
 
