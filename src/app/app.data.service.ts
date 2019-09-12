@@ -41,5 +41,11 @@ getcargadianolaborables() {
 
 
 }
+
+getlistaautorizaciondehorasextras() {
+  return this.http.get('https://localhost:5001/api/listaautorizaciondehorasextras')
+
+
+}
 }
 

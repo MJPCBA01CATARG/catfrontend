@@ -18,7 +18,7 @@ import { ListaturnosComponent } from './listaturnos/listaturnos.component';
 import { LoginComponent } from './login/login.component';
 import { MenugeneralComponent } from './menugeneral/menugeneral.component';
 import { CargadianolaborablesComponent } from './cargadianolaborables/cargadianolaborables.component';
-
+import { ListaautorizaciondehorasextrasComponent } from './Listaautorizaciondehorasextras/Listaautorizaciondehorasextras.component';
 
 
 
@@ -42,6 +42,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'menugeneral', component: MenugeneralComponent },
   { path: 'cargadianolaborables', component: CargadianolaborablesComponent },
+  { path: 'listaautorizaciondehorasextras', component: ListaautorizaciondehorasextrasComponent},
   
 ];
 
