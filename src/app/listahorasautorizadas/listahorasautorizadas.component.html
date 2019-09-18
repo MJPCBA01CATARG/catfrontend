@@ -1,1 +1,140 @@
-<p>listahorasautorizadas works!</p>
+<div class="main-panel">
+  
+    <app-menugeneral></app-menugeneral>
+
+    <h4 class="card-title"> Autorización de Horas Extras</h4>
+
+
+   
+        <!-- FECHA -->                    
+
+<div class="col-md-15 pr-1">
+<label for="" class="col-sm-5 col-form-label">Desde:</label>
+<div class="col-md-5 pr-1">
+</div>   
+
+<input type="date" name="fecha" min=""
+max="" step="2">
+
+
+<div class="col-md-15 pr-1">
+    <label for="" class="col-sm-5 col-form-label">Hasta:</label>
+    <div class="col-md-5 pr-1">
+    </div>   
+    
+
+     <input type="date" name="fecha" min=""
+    max="" step="2">
+
+
+    
+    <!-- SITIO SECTOR --> 
+    <div class="row">
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Sitio:</label>
+            <input type="text" class="form-control" id="txtHoraInicio" placeholder="">
+          </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="txtHoraFin" placeholder="">
+            </div>
+          </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-2 pr-5">
+          <div class="form-group">
+            <label>Sector:</label>
+            <input type="text" class="form-control" id="txtSitio" >
+          </div>
+        </div>
+
+
+        <div class="col-md-5 pr-5">
+            <div class="form-group">
+             
+              <input type="text" class="form-control" id="txtSitio" >
+            </div>
+          </div>     
+
+        
+        
+      </div>
+
+      <!-- RADIO BUTTON --> 
+
+      <input type="radio" name="sexo" id="todos"checked>
+      <label for="hombre">Todas</label>
+  
+      <input type="radio" name="sexo" id="bajoconvenio">
+      <label for="mujer">Individual</label>
+
+      <input type="radio" name="sexo" id="todos">
+      <label for="hombre">Banco de horas</label>
+  
+      <input type="radio" name="sexo" id="bajoconvenio">
+      <label for="mujer">No autorizadas</label>
+
+
+
+    <!-- Inicio Componente -->
+
+    <!-- LISTA -->
+
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"> Horas Extras para autorizar</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th class="text-left">
+                        Horas
+                      </th>
+                      <th>
+                       Empleado
+                      </th> 
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let lugar of lugares">
+                      <td>{{lugar.codLugar}}</td>
+                      <td>{{lugar.descripcion}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+        
+          </div>
+        </div>
+      </div>
+    
+     <!-- Fin Componente -->
+
+     <div class="col-md-10 pr-5">
+        <div class="form-group">
+          <label>Observaciones:</label>
+          <input type="text" class="form-control" id="txtSitio" >
+        </div>
+      </div>
+
+
+      <div class="update ml-auto mr-auto">
+        <button type="submit" class="btn btn-primary btn-round">REGISTRAR</button>
+        <button type="submit" class="btn btn-primary btn-round">SALIR</button>
+
+      </div>   
+
+
+    </div>
